@@ -1,8 +1,8 @@
 import { Select, Button, Input, Typography, Divider } from "antd"
-import { LoginForm as LoginFormProps } from "../../types"
+import { Category as CategoryProps } from "../../types"
 
 interface Props {
-    onSubmit: (values: LoginFormProps) => void,
+    onSubmit: (values: CategoryProps) => void,
 }
 
 const CategoryForm = ({ onSubmit }: Props) => {
