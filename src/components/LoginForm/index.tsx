@@ -24,6 +24,7 @@ const LoginForm = ({ onSubmit }: Props) => {
             <div>
                 <Typography.Paragraph>{'Email'}</Typography.Paragraph>
                 <Input name={'email'}
+                    placeholder={'Enter Your Email'}
                     value={formMik.values.email}
                     onChange={formMik.handleChange('email')}
                     status={formMik.errors.email && 'error'}
@@ -35,6 +36,7 @@ const LoginForm = ({ onSubmit }: Props) => {
             <div>
                 <Typography.Paragraph>{'Password'}</Typography.Paragraph>
                 <Input name={'password'}
+                    placeholder={'Enter Your Password'}
                     value={formMik.values.password}
                     onChange={formMik.handleChange('password')}
                     status={formMik.errors.password && 'error'}
